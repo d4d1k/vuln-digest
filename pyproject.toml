@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vuln-digest"
+version = "0.1.0"
+description = "Critical CVE and CISA KEV digest for Telegram"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+vuln-digest = "vuln_digest:main"
+
+[tool.setuptools]
+py-modules = ["vuln_digest"]
